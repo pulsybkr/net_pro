@@ -12,13 +12,13 @@ export default function Hero() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
-                <Sparkles className="w-4 h-4 text-blue-600" />
-                <span className="text-sm font-medium text-blue-600">Nouveau à Lille : 1er mois -20%</span>
+                <Sparkles className="w-4 h-4 text-salem-700" />
+                <span className="text-sm hidden font-medium text-salem-700">Nouveau à Lille : 1er mois -20%</span>
               </div>
               
               <h1 className="text-5xl font-bold leading-tight">
                 Gardez vos locaux impeccables,{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
                   concentrez-vous sur l'essentiel
                 </span>
               </h1>
@@ -42,11 +42,11 @@ export default function Hero() {
 
               <div className="flex items-center gap-8 pt-4">
                 <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-blue-600" />
+                  <Clock className="w-5 h-5 text-salem-700" />
                   <span className="text-sm">Réponse en 2h</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-blue-600" />
+                  <Shield className="w-5 h-5 text-salem-700" />
                   <span className="text-sm">Satisfaction garantie</span>
                 </div>
               </div>

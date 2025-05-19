@@ -44,12 +44,12 @@ export default function ClientTypes() {
     <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm">
+          <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm">
             Nos Secteurs d'Intervention
           </span>
           <h2 className="text-4xl font-bold">
             Nous accompagnons{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
               tous types d'entreprises
             </span>
           </h2>
@@ -66,12 +66,12 @@ export default function ClientTypes() {
             >
               <div className="relative z-10">
                 <div className="mb-6">
-                  <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
-                    <client.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
+                  <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:bg-salem-700 group-hover:scale-110 transition-all duration-300">
+                    <client.icon className="w-7 h-7 text-salem-700 group-hover:text-white transition-colors" />
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-salem-700 transition-colors">
                   {client.title}
                 </h3>
                 <p className="text-gray-600 mb-4 line-clamp-2">
@@ -79,7 +79,7 @@ export default function ClientTypes() {
                 </p>
                 
                 <div className="text-sm">
-                  <span className="text-blue-600 font-semibold">Secteurs : </span>
+                  <span className="text-salem-700 font-semibold">Secteurs : </span>
                   <span className="text-gray-500">{client.examples}</span>
                 </div>
               </div>
@@ -88,13 +88,13 @@ export default function ClientTypes() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               {/* Effet de bordure animée */}
-              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-600 to-blue-400 w-0 group-hover:w-full transition-all duration-300" />
+              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-salem-700 to-salem-400 w-0 group-hover:w-full transition-all duration-300" />
             </div>
           ))}
         </div>
 
         {/* Section Statistiques avec design amélioré */}
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-400 rounded-3xl p-12 text-white relative overflow-hidden">
+        <div className="mt-20 bg-gradient-to-r from-salem-700 to-salem-400 rounded-3xl p-12 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10" />
           <div className="relative z-10">
             <div className="grid md:grid-cols-3 gap-12">
@@ -120,7 +120,7 @@ export default function ClientTypes() {
             Vous ne trouvez pas votre secteur d'activité ? <br />
             Nous développons des solutions sur mesure pour chaque client.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-blue-100">
+          <button className="bg-salem-700 text-white px-8 py-4 rounded-xl font-medium hover:bg-salem-800 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-blue-100">
             Demander un Devis Personnalisé
           </button>
         </div>

@@ -53,7 +53,7 @@ export const sendDevisConfirmationEmail = async (data: DevisFormData) => {
   const mailOptions = {
     from: process.env.SMTP_FROM,
     to: data.email,
-    subject: 'Confirmation de votre demande de devis - ProNet Lille',
+    subject: 'Confirmation de votre demande de devis - Éclat d’Nord',
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #2563eb;">Merci pour votre demande de devis</h2>
@@ -146,7 +146,7 @@ export const sendContactConfirmationEmail = async (data: ContactFormData) => {
   const mailOptions = {
     from: process.env.SMTP_FROM,
     to: data.email,
-    subject: 'Confirmation de votre message - ProNet Lille',
+    subject: 'Confirmation de votre message - Éclat d’Nord',
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #2563eb;">Merci de nous avoir contacté</h2>

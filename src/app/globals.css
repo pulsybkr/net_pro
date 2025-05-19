@@ -16,6 +16,17 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
+    --color-salem-50: #f1fcf2;
+    --color-salem-100: #dff9e4;
+    --color-salem-200: #c0f2c9;
+    --color-salem-300: #8ee7a0;
+    --color-salem-400: #56d270;
+    --color-salem-400: #2fb84c;
+    --color-salem-600: #21983a;
+    --color-salem-700: #1e7a32;
+    --color-salem-800: #1c5f2b;
+    --color-salem-900: #194e26;
+    --color-salem-950: #082b12;
   }
 }
 

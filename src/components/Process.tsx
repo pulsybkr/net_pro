@@ -7,7 +7,7 @@ export default function Process() {
       icon: CalendarCheck,
       title: "Demande de Devis",
       description: "Remplissez notre formulaire simple et obtenez un devis personnalisé en quelques clics",
-      color: "from-blue-600 to-blue-400"
+      color: "from-salem-700 to-salem-400"
     },
     {
       number: "02",
@@ -36,12 +36,12 @@ export default function Process() {
     <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block">
+          <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block">
             Notre Méthode
           </span>
           <h2 className="text-4xl font-bold">
             Un Processus{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
               Simple et Efficace
             </span>
           </h2>
@@ -55,7 +55,7 @@ export default function Process() {
             <div key={index} className="relative">
               <div className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300">
                 {/* Numéro flottant */}
-                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform">
+                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-gradient-to-r from-salem-700 to-salem-400 flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform">
                   {step.number}
                 </div>
 
@@ -65,7 +65,7 @@ export default function Process() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold mb-4 group-hover:text-salem-700 transition-colors">
                   {step.title}
                 </h3>
                 
@@ -76,7 +76,7 @@ export default function Process() {
                 {/* Ligne de connexion */}
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 w-8">
-                    <div className="w-full h-0.5 bg-gradient-to-r from-blue-600 to-blue-400" />
+                    <div className="w-full h-0.5 bg-gradient-to-r from-salem-700 to-salem-400" />
                   </div>
                 )}
               </div>
@@ -85,12 +85,12 @@ export default function Process() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl p-12 text-white">
+        <div className="mt-16 text-center bg-gradient-to-r from-salem-700 to-salem-400 rounded-2xl p-12 text-white">
           <h3 className="text-2xl font-bold mb-4">Prêt à commencer ?</h3>
           <p className="mb-8 text-blue-50 max-w-2xl mx-auto">
             Obtenez un devis personnalisé en quelques minutes et découvrez comment nous pouvons vous aider à maintenir vos locaux impeccables.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+          <button className="bg-white text-salem-700 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
             Demander un Devis Gratuit
           </button>
         </div>

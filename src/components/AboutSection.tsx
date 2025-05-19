@@ -24,20 +24,20 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-sm font-medium text-blue-600">Notre Histoire</span>
+              <Sparkles className="w-4 h-4 text-salem-700" />
+              <span className="text-sm font-medium text-salem-700">Notre Histoire</span>
             </div>
 
             <h2 className="text-4xl font-bold leading-tight">
               Une nouvelle vision du nettoyage professionnel à{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
                 Lille
               </span>
             </h2>
 
             <div className="space-y-4 text-gray-600">
               <p>
-                ProNet Lille est née d'une conviction simple : les entreprises méritent un service de nettoyage aussi dynamique et moderne qu'elles. Notre jeune équipe apporte un souffle nouveau dans le secteur du nettoyage professionnel.
+                Éclat d’Nord est née d'une conviction simple : les entreprises méritent un service de nettoyage aussi dynamique et moderne qu'elles. Notre jeune équipe apporte un souffle nouveau dans le secteur du nettoyage professionnel.
               </p>
               
               <p>
@@ -47,7 +47,7 @@ export default function AboutSection() {
               <ul className="grid gap-3">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-salem-700 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -60,7 +60,7 @@ export default function AboutSection() {
               <div className="relative h-64 rounded-xl overflow-hidden">
                 <Image
                   src="/2_.jpg"
-                  alt="Équipe ProNet en action"
+                  alt="Équipe Eclat d'Nord en action"
                   fill
                   className="object-cover"
                 />
@@ -92,11 +92,11 @@ export default function AboutSection() {
             </div>
 
             {/* Carte flottante des statistiques */}
-            <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded-xl shadow-xl p-6 w-full max-w-md">
+            <div className="hidden absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded-xl shadow-xl p-6 w-full max-w-md">
               <div className="grid grid-cols-2 gap-6">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">{achievement.number}</div>
+                    <div className="text-2xl font-bold text-salem-700">{achievement.number}</div>
                     <div className="text-sm text-gray-600">{achievement.label}</div>
                   </div>
                 ))}

@@ -15,7 +15,7 @@ export default function Testimonials() {
       name: "Pierre Martin",
       role: "Gérant",
       company: "Cabinet Martin & Associés",
-      content: "Flexibilité et qualité de service exceptionnelles. Je recommande vivement ProNet Lille.",
+      content: "Flexibilité et qualité de service exceptionnelles. Je recommande vivement Éclat d’Nord.",
       rating: 5,
       image: "/testimonials/person2.jpg"
     },
@@ -43,7 +43,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
               <div className="flex items-center gap-4 mb-4">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                <div className="hidden w-12 h-12 rounded-full overflow-hidden">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -54,7 +54,7 @@ export default function Testimonials() {
                 <div>
                   <h3 className="font-bold">{testimonial.name}</h3>
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
-                  <p className="text-sm text-gray-600">{testimonial.company}</p>
+                  <p className="text-sm text-gray-600 hidden">{testimonial.company}</p>
                 </div>
               </div>
               <div className="flex gap-1 mb-4">

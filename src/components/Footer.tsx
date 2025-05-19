@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* À propos */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">ProNet Lille</h3>
+            <h3 className="text-white text-lg font-bold mb-4">Éclat d’Nord</h3>
             <p className="mb-4">
               Votre partenaire de confiance pour le nettoyage professionnel de bureaux à Lille et ses environs.
             </p>
@@ -19,7 +19,7 @@ export default function Footer() {
               <Link href="https://instagram.com" className="hover:text-pink-500">
                 <Instagram size={20} />
               </Link>
-              <Link href="https://linkedin.com" className="hover:text-blue-400">
+              <Link href="https://linkedin.com" className="hover:text-salem-400">
                 <Linkedin size={20} />
               </Link>
             </div>
@@ -105,7 +105,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p>
-            © {new Date().getFullYear()} ProNet Lille. Tous droits réservés.
+            © {new Date().getFullYear()} Éclat d’Nord. Tous droits réservés.
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="text-xl font-bold mb-4">1. Informations légales</h2>
               <p className="text-gray-600 mb-4">
-                ProNet Lille<br />
+                Éclat d’Nord<br />
                 SARL au capital de XX XXX euros<br />
                 RCS Lille Métropole : XXX XXX XXX<br />
                 Siège social : [Adresse complète]<br />
@@ -48,7 +48,7 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="text-xl font-bold mb-4">5. Responsabilité</h2>
               <p className="text-gray-600 mb-4">
-                La société ProNet Lille s'efforce d'assurer au mieux de ses possibilités 
+                La société Éclat d’Nord s'efforce d'assurer au mieux de ses possibilités 
                 l'exactitude et la mise à jour des informations diffusées sur ce site, 
                 dont elle se réserve le droit de corriger le contenu à tout moment et 
                 sans préavis.

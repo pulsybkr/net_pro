@@ -101,12 +101,12 @@ export default function DevisPage() {
         <div className="max-w-4xl mx-auto">
           {/* En-tête */}
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block mb-4">
+            <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block mb-4">
               Devis Gratuit
             </span>
             <h1 className="text-4xl font-bold mb-4">
               Votre devis{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
                 personnalisé
               </span>
             </h1>
@@ -120,12 +120,12 @@ export default function DevisPage() {
                 <div
                   key={index}
                   className={`flex flex-col items-center w-1/4 ${
-                    step > index + 1 ? "text-blue-600" : step === index + 1 ? "text-blue-600" : "text-gray-400"
+                    step > index + 1 ? "text-salem-700" : step === index + 1 ? "text-salem-700" : "text-gray-400"
                   }`}
                 >
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 
-                    ${step > index + 1 ? "bg-blue-600 text-white" : 
-                      step === index + 1 ? "bg-blue-600 text-white" : 
+                    ${step > index + 1 ? "bg-salem-700 text-white" : 
+                      step === index + 1 ? "bg-salem-700 text-white" : 
                       "bg-gray-200"}`}
                   >
                     {step > index + 1 ? <CheckCircle className="w-5 h-5" /> : index + 1}
@@ -136,7 +136,7 @@ export default function DevisPage() {
             </div>
             <div className="relative w-full h-2 bg-gray-200 rounded-full">
               <div
-                className="absolute left-0 top-0 h-full bg-blue-600 rounded-full transition-all duration-300"
+                className="absolute left-0 top-0 h-full bg-salem-700 rounded-full transition-all duration-300"
                 style={{ width: `${((step - 1) / 3) * 100}%` }}
               />
             </div>
@@ -203,7 +203,7 @@ export default function DevisPage() {
                       type="checkbox"
                       checked={formData.etage}
                       onChange={(e) => setFormData({...formData, etage: e.target.checked})}
-                      className="w-4 h-4 text-blue-600"
+                      className="w-4 h-4 text-salem-700"
                     />
                     <span>Étages à nettoyer</span>
                   </label>
@@ -213,7 +213,7 @@ export default function DevisPage() {
                       type="checkbox"
                       checked={formData.ascenseur}
                       onChange={(e) => setFormData({...formData, ascenseur: e.target.checked})}
-                      className="w-4 h-4 text-blue-600"
+                      className="w-4 h-4 text-salem-700"
                     />
                     <span>Ascenseur disponible</span>
                   </label>
@@ -243,7 +243,7 @@ export default function DevisPage() {
                         type="checkbox"
                         checked={formData[service.id as keyof typeof formData] as boolean}
                         onChange={(e) => setFormData({...formData, [service.id]: e.target.checked})}
-                        className="mt-2 w-4 h-4 text-blue-600"
+                        className="mt-2 w-4 h-4 text-salem-700"
                       />
                     </label>
                   ))}
@@ -397,7 +397,7 @@ export default function DevisPage() {
                       value={formData.commentaires}
                       onChange={(e) => setFormData({...formData, commentaires: e.target.value})}
                       placeholder="Précisions importantes, contraintes particulières..."
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-all resize-none h-32"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all resize-none h-32"
                     />
                   </div>
                 </div>
@@ -430,7 +430,7 @@ export default function DevisPage() {
               ) : (
                 <Button
                   type="submit"
-                  className="ml-auto flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-400"
+                  className="ml-auto flex items-center gap-2 bg-gradient-to-r from-salem-700 to-salem-400"
                 >
                   <Sparkles className="w-4 h-4" />
                   Obtenir mon devis
@@ -447,7 +447,7 @@ export default function DevisPage() {
               { icon: CheckCircle, text: "Devis gratuit" }
             ].map((item, index) => (
               <div key={index} className="flex items-center justify-center gap-2 text-gray-600">
-                <item.icon className="w-4 h-4 text-blue-600" />
+                <item.icon className="w-4 h-4 text-salem-700" />
                 <span className="text-sm">{item.text}</span>
               </div>
             ))}

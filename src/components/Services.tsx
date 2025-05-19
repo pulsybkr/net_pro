@@ -11,7 +11,7 @@ export default function Services() {
         "Désinfection des surfaces",
         "Entretien mobilier"
       ],
-      color: "from-blue-600 to-blue-400",
+      color: "from-salem-700 to-salem-400",
       popular: true
     },
     {
@@ -27,13 +27,13 @@ export default function Services() {
       popular: false
     },
     {
-      title: "Sanitaires",
-      description: "Désinfection et entretien complet des espaces sanitaires",
+      title: "Particulier",
+      description: "Nettoyage complet de votre maison ou appartement",
       features: [
-        "Désinfection complète",
-        "Réapprovisionnement consommables",
-        "Nettoyage miroirs et robinets",
-        "Détartrage"
+        "Nettoyage des pièces principales",
+        "Entretien cuisine et salle de bain",
+        "Dépoussiérage complet",
+        "Nettoyage des sols"
       ],
       color: "from-purple-600 to-purple-400",
       popular: false
@@ -44,12 +44,12 @@ export default function Services() {
     <section className="py-24 bg-gradient-to-b from-white to-gray-50" id="services">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block">
+          <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block">
             Nos Services
           </span>
           <h2 className="text-4xl font-bold">
             Des solutions{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
               clés en main
             </span>
           </h2>
@@ -66,7 +66,7 @@ export default function Services() {
                 ${service.popular ? 'border-2 border-blue-100 shadow-lg' : 'border border-gray-100 shadow-sm'}`}
             >
               {service.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-1 rounded-full text-sm font-medium">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-salem-700 to-salem-400 text-white px-4 py-1 rounded-full text-sm font-medium">
                   Le plus demandé
                 </div>
               )}
@@ -77,7 +77,7 @@ export default function Services() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 group-hover:text-salem-700 transition-colors">
                 {service.title}
               </h3>
               
@@ -95,7 +95,7 @@ export default function Services() {
               </ul>
 
               <button className="w-full bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 py-3 px-6 rounded-xl font-medium 
-                group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-blue-400 group-hover:text-white 
+                group-hover:bg-gradient-to-r group-hover:from-salem-700 group-hover:to-salem-400 group-hover:text-white 
                 transition-all duration-300 flex items-center justify-center gap-2">
                 En savoir plus
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -116,7 +116,7 @@ export default function Services() {
                 Nous adaptons nos prestations à vos besoins spécifiques. Fréquence, horaires, matériel... 
                 Tout est personnalisable pour répondre au mieux à vos attentes.
               </p>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 rounded-xl font-medium 
+              <button className="bg-gradient-to-r from-salem-700 to-salem-400 text-white px-6 py-3 rounded-xl font-medium 
                 hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 hover:scale-105">
                 Demander un devis gratuit
               </button>
@@ -129,7 +129,7 @@ export default function Services() {
                 { label: "Devis Gratuit", value: "2min" }
               ].map((stat, index) => (
                 <div key={index} className="bg-white p-4 rounded-xl text-center hover:shadow-md transition-shadow">
-                  <div className="text-2xl font-bold text-blue-600">{stat.value}</div>
+                  <div className="text-2xl font-bold text-salem-700">{stat.value}</div>
                   <div className="text-sm text-gray-600">{stat.label}</div>
                 </div>
               ))}

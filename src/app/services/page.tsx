@@ -84,7 +84,7 @@ export default function ServicesPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-salem-700 to-salem-400 opacity-90" />
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Nos Services de Nettoyage Professionnel
@@ -99,7 +99,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm">
+            <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm">
               Nos Services Principaux
             </span>
             <h2 className="text-3xl font-bold mt-4 mb-6">
@@ -144,7 +144,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm">
+            <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm">
               Services Spécialisés
             </span>
             <h2 className="text-3xl font-bold mt-4 mb-6">
@@ -163,7 +163,7 @@ export default function ServicesPage() {
                 <ul className="space-y-3">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-3">
-                      <div className="w-2 h-2 rounded-full bg-blue-600"></div>
+                      <div className="w-2 h-2 rounded-full bg-salem-700"></div>
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -205,8 +205,8 @@ export default function ServicesPage() {
               }
             ].map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                  <item.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-blue-50 flex items-center justify-center group-hover:bg-salem-700 transition-colors">
+                  <item.icon className="w-8 h-8 text-salem-700 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
@@ -217,7 +217,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-400">
+      <section className="py-20 bg-gradient-to-r from-salem-700 to-salem-400">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-3xl font-bold mb-6">Prêt à commencer ?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
@@ -226,7 +226,7 @@ export default function ServicesPage() {
           <div className="flex justify-center gap-4">
             <a
               href="/devis"
-              className="bg-white text-blue-600 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors"
+              className="bg-white text-salem-700 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors"
             >
               Demander un devis
             </a>

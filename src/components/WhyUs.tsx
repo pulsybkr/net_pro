@@ -6,7 +6,7 @@ export default function WhyUs() {
       icon: Shield,
       title: "Fiabilité Garantie",
       description: "Personnel qualifié et vérifié, respect des normes d'hygiène les plus strictes",
-      color: "from-blue-600 to-blue-400"
+      color: "from-salem-700 to-salem-400"
     },
     {
       icon: Clock,
@@ -32,13 +32,13 @@ export default function WhyUs() {
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <span className="text-blue-600 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block">
+          <span className="text-salem-700 font-medium bg-blue-50 px-4 py-2 rounded-full text-sm inline-block">
             Nos Avantages
           </span>
           <h2 className="text-4xl font-bold">
             Pourquoi Choisir{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
-              ProNet Lille
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-salem-700 to-salem-400">
+              Éclat d’Nord
             </span>
             ?
           </h2>
@@ -61,7 +61,7 @@ export default function WhyUs() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-xl font-bold mb-4 group-hover:text-salem-700 transition-colors">
                 {reason.title}
               </h3>
               
@@ -82,7 +82,7 @@ export default function WhyUs() {
               <p className="text-gray-600 mb-6">
                 Nous nous adaptons à vos besoins spécifiques et vous accompagnons dans la durée pour garantir votre satisfaction.
               </p>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors">
+              <button className="bg-salem-700 text-white px-6 py-3 rounded-xl font-medium hover:bg-salem-800 transition-colors">
                 Contactez-nous
               </button>
             </div>
@@ -94,7 +94,7 @@ export default function WhyUs() {
                 { label: "Équipes Disponibles", value: "10+" }
               ].map((stat, index) => (
                 <div key={index} className="bg-white p-4 rounded-xl text-center">
-                  <div className="text-2xl font-bold text-blue-600">{stat.value}</div>
+                  <div className="text-2xl font-bold text-salem-700">{stat.value}</div>
                   <div className="text-sm text-gray-600">{stat.label}</div>
                 </div>
               ))}

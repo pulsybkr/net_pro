@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ProNet Lille - Services de Nettoyage Professionnel de Bureaux",
+  title: "Éclat d’Nord - Services de Nettoyage Professionnel de Bureaux",
   description: "Entreprise de nettoyage professionnel de bureaux à Lille. Services sur mesure, devis gratuit en ligne. Expertise et qualité garanties.",
   keywords: "nettoyage bureaux Lille, entreprise nettoyage professionnel, service nettoyage bureau, devis nettoyage gratuit",
 };
