@@ -1,11 +1,8 @@
 "use client";
 
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm("xblobpky"); // Remplacez par votre ID Formspree
-
   const contactInfo = [
     {
       icon: Phone,
@@ -75,7 +72,7 @@ export default function Contact() {
 
           {/* Formulaire de contact */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-8">
+            <form action="https://formspree.io/f/xblobpky" method="POST" className="bg-white rounded-2xl shadow-lg p-8">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-900">Nom complet</label>
@@ -97,7 +94,6 @@ export default function Contact() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
                     placeholder="jean@exemple.fr"
                   />
-                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
 
                 <div className="space-y-2">
@@ -141,24 +137,21 @@ export default function Contact() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all resize-none"
                     placeholder="Décrivez vos besoins..."
                   ></textarea>
-                  <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
               </div>
 
               <button
                 type="submit"
-                disabled={state.submitting}
                 className="mt-6 w-full bg-gradient-to-r from-salem-700 to-salem-400 text-white py-4 px-6 rounded-xl 
-                  font-medium hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
+                  font-medium hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 flex items-center justify-center gap-2"
               >
-                {state.submitting ? "Envoi en cours..." : "Envoyer le message"}
+                Envoyer le message
                 <Send className="w-4 h-4" />
               </button>
-              {state.succeeded && (
-                <p className="mt-4 text-green-600 text-center">
-                  Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
-                </p>
-              )}
+              
+              <div id="form-success" style={{display: 'none'}} className="mt-4 text-green-600 text-center">
+                Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+              </div>
             </form>
           </div>
         </div>
