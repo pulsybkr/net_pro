@@ -117,7 +117,7 @@ export default function DevisPage() {
           </div>
 
           {/* Formulaire */}
-          <form id="devis-form" action="https://formspree.io/f/xjkwzpoe" method="POST" className="bg-white rounded-2xl shadow-xl p-8">
+          <form id="devis-form" action="https://formspree.io/f/xblobpky" method="POST" className="bg-white rounded-2xl shadow-xl p-8">
             {step === 1 && (
               <div className="space-y-8">
                 <div className="grid md:grid-cols-2 gap-6">

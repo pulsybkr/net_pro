@@ -231,7 +231,7 @@ export default function ServicesPage() {
               Demander un devis
             </a>
             <a
-              href="/contact"
+              href="/#contact"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-medium hover:bg-white/10 transition-colors"
             >
               Nous contacter

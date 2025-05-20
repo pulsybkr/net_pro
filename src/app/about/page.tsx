@@ -28,7 +28,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="hidden min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-r from-salem-700 to-salem-400 opacity-90" />
@@ -129,7 +129,7 @@ export default function AboutPage() {
             Découvrez comment nous pouvons vous aider à maintenir vos locaux impeccables
           </p>
           <a
-            href="/contact"
+            href="/#contact"
             className="bg-white text-salem-700 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors inline-block"
           >
             Contactez-nous

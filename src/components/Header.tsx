@@ -14,7 +14,7 @@ export default function Header() {
             <Link href="/services" className="hover:text-salem-700 transition-colors">
               Nos Services
             </Link>
-            <Link href="/about" className="hover:text-salem-700 transition-colors">
+            <Link href="/about" className="hidden hover:text-salem-700 transition-colors">
               À Propos
             </Link>
             <Link href="/blog" className="hover:text-salem-700 transition-colors hidden">

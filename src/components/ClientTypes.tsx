@@ -120,7 +120,7 @@ export default function ClientTypes() {
             Vous ne trouvez pas votre secteur d'activité ? <br />
             Nous développons des solutions sur mesure pour chaque client.
           </p>
-          <button className="bg-salem-700 text-white px-8 py-4 rounded-xl font-medium hover:bg-salem-800 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-blue-100">
+          <button className="hidden bg-salem-700 text-white px-8 py-4 rounded-xl font-medium hover:bg-salem-800 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-blue-100">
             Demander un Devis Personnalisé
           </button>
         </div>
