@@ -12,6 +12,7 @@ export default function Services() {
         "Entretien mobilier"
       ],
       color: "from-salem-700 to-salem-400",
+      image: "/2__.jpg",
       popular: true
     },
     {
@@ -24,6 +25,7 @@ export default function Services() {
         "Hauteur accessible"
       ],
       color: "from-indigo-600 to-indigo-400",
+      image: "/1__.jpg",
       popular: false
     },
     {
@@ -36,7 +38,8 @@ export default function Services() {
         "Nettoyage des sols"
       ],
       color: "from-purple-600 to-purple-400",
-      popular: false
+      popular: false,
+      image: "/3__.jpg"
     }
   ];
 
@@ -58,51 +61,52 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`group relative bg-white p-8 rounded-2xl transition-all duration-300 hover:shadow-xl
+              className={`group relative bg-white p-6 md:p-8 rounded-2xl transition-all duration-300 hover:shadow-xl
                 ${service.popular ? 'border-2 border-blue-100 shadow-lg' : 'border border-gray-100 shadow-sm'}`}
             >
               {service.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-salem-700 to-salem-400 text-white px-4 py-1 rounded-full text-sm font-medium">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-salem-700 to-salem-400 text-white px-4 py-1 rounded-full text-sm font-medium shadow-md">
                   Le plus demandé
                 </div>
               )}
 
-              <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-r ${service.color} p-0.5 group-hover:scale-110 transition-transform duration-300`}>
-                <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                  <Sparkles className={`w-8 h-8 bg-clip-text text-transparent bg-gradient-to-r ${service.color}`} />
-                </div>
+              <div className="relative w-full aspect-video mb-6 rounded-2xl overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
+                />
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-salem-700 transition-colors">
+              <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-salem-700 transition-colors">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
                 {service.description}
               </p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-3 group-hover:translate-x-1 transition-transform">
-                    <Check className="text-green-500 w-5 h-5 flex-shrink-0" />
-                    <span className="text-gray-600">{feature}</span>
+                    <Check className="text-green-500 w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+                    <span className="text-gray-600 text-sm md:text-base">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <button className="w-full bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 py-3 px-6 rounded-xl font-medium 
+              <button className="hidden w-full bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 py-2.5 md:py-3 px-4 md:px-6 rounded-xl font-medium 
                 group-hover:bg-gradient-to-r group-hover:from-salem-700 group-hover:to-salem-400 group-hover:text-white 
-                transition-all duration-300 flex items-center justify-center gap-2">
+                transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base">
                 En savoir plus
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
 
-              {/* Effet de bordure animée */}
-              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r w-0 group-hover:w-full transition-all duration-300 rounded-b-2xl" />
+              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-salem-700 to-salem-400 w-0 group-hover:w-full transition-all duration-300 rounded-b-2xl" />
             </div>
           ))}
         </div>

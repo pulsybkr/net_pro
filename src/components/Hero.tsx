@@ -54,7 +54,7 @@ export default function Hero() {
 
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/1_.jpg"
+                src="/2__.jpg"
                 alt="Nettoyage professionnel de bureau à Lille"
                 fill
                 className="object-cover"

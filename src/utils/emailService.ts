@@ -72,8 +72,8 @@ export const sendDevisConfirmationEmail = async (data: DevisFormData) => {
         
         <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; margin: 20px 0;">
           <p style="margin: 0;"><strong>Besoin d'aide ?</strong></p>
-          <p style="margin: 5px 0;">📞 03 20 XX XX XX</p>
-          <p style="margin: 5px 0;">✉️ contact@pronet-lille.fr</p>
+          <p style="margin: 5px 0;">📞 06 29 27 15 31</p>
+          <p style="margin: 5px 0;">✉️ eclatdnord@gmail.com</p>
         </div>
 
         <p style="font-size: 12px; color: #6b7280;">
@@ -156,8 +156,8 @@ export const sendContactConfirmationEmail = async (data: ContactFormData) => {
 
         <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; margin: 20px 0;">
           <p style="margin: 0;"><strong>Besoin d'aide ?</strong></p>
-          <p style="margin: 5px 0;">📞 03 20 XX XX XX</p>
-          <p style="margin: 5px 0;">✉️ contact@pronet-lille.fr</p>
+          <p style="margin: 5px 0;">📞 06 29 27 15 31</p>
+          <p style="margin: 5px 0;">✉️ eclatdnord@gmail.com</p>
         </div>
 
         <p style="font-size: 12px; color: #6b7280;">

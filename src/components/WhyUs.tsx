@@ -86,7 +86,7 @@ export default function WhyUs() {
                 Contactez-nous
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="hidden grid grid-cols-2 gap-4">
               {[
                 { label: "Clients Satisfaits", value: "150+" },
                 { label: "Années d'Expérience", value: "5+" },

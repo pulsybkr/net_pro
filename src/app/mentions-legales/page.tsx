@@ -10,18 +10,14 @@ export default function MentionsLegalesPage() {
               <h2 className="text-xl font-bold mb-4">1. Informations légales</h2>
               <p className="text-gray-600 mb-4">
                 Éclat d’Nord<br />
-                SARL au capital de XX XXX euros<br />
-                RCS Lille Métropole : XXX XXX XXX<br />
-                Siège social : [Adresse complète]<br />
-                N° TVA : XX XX XXX XXX
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold mb-4">2. Contact</h2>
               <p className="text-gray-600 mb-4">
-                Téléphone : 03 20 XX XX XX<br />
-                Email : contact@pronet-lille.fr
+                Téléphone : 06 29 27 15 31<br />
+                Email : eclatdnord@gmail.com
               </p>
             </section>
 

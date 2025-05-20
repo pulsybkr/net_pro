@@ -13,13 +13,13 @@ export default function Footer() {
               Votre partenaire de confiance pour le nettoyage professionnel de bureaux à Lille et ses environs.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className="hover:text-blue-500">
+              <Link href="https://facebook.com" target="_blank" className="hover:text-blue-500">
                 <Facebook size={20} />
               </Link>
-              <Link href="https://instagram.com" className="hover:text-pink-500">
+              <Link href="https://instagram.com/eclatdnord" target="_blank" className="hover:text-pink-500">
                 <Instagram size={20} />
               </Link>
-              <Link href="https://linkedin.com" className="hover:text-salem-400">
+              <Link href="https://linkedin.com" target="_blank" className="hidden hover:text-salem-400">
                 <Linkedin size={20} />
               </Link>
             </div>
@@ -56,20 +56,20 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2">
+              <li className="hidden flex items-center gap-2">
                 <MapPin size={18} />
                 <span>123 Rue du Commerce, 59000 Lille</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} />
-                <a href="tel:+33320000000" className="hover:text-white">
-                  03 20 00 00 00
+                <a href="tel:+33629271531" className="hover:text-white">
+                  06 29 27 15 31
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={18} />
-                <a href="mailto:contact@pronet-lille.fr" className="hover:text-white">
-                  contact@pronet-lille.fr
+                <a href="mailto:eclatdnord@gmail.com" className="hover:text-white">
+                  eclatdnord@gmail.com
                 </a>
               </li>
             </ul>
@@ -84,7 +84,7 @@ export default function Footer() {
                   Devis Gratuit
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog" className="hover:text-white">
                   Blog
                 </Link>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <Link href="/politique-confidentialite" className="hover:text-white">
                   Politique de Confidentialité
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

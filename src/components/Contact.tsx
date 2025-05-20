@@ -1,60 +1,30 @@
 "use client";
 
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
-    service: "bureaux"
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi du formulaire');
-      }
-
-      // Afficher un message de succès
-      alert('Votre demande a été envoyée avec succès !');
-    } catch (error) {
-      console.error('Erreur:', error);
-      alert('Une erreur est survenue. Veuillez réessayer.');
-    }
-  };
+  const [state, handleSubmit] = useForm("xblobpky"); // Remplacez par votre ID Formspree
 
   const contactInfo = [
     {
       icon: Phone,
       title: "Téléphone",
-      info: "03 20 XX XX XX",
+      info: "06 29 27 15 31",
       description: "Du lundi au vendredi, 8h-19h"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "contact@pronet-lille.fr",
+      info: "eclatdnord@gmail.com",
       description: "Réponse sous 2h ouvrées"
     },
-    {
-      icon: MapPin,
-      title: "Adresse",
-      info: "XXX Rue XXXX, Lille",
-      description: "59000 Lille, France"
-    },
+    // {
+    //   icon: MapPin,
+    //   title: "Adresse",
+    //   info: "XXX Rue XXXX, Lille",
+    //   description: "59000 Lille, France"
+    // },
     {
       icon: Clock,
       title: "Horaires",
@@ -111,11 +81,10 @@ export default function Contact() {
                   <label className="text-sm font-medium text-gray-900">Nom complet</label>
                   <input
                     type="text"
+                    name="name"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
                     placeholder="Jean Dupont"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
                   />
                 </div>
 
@@ -123,22 +92,21 @@ export default function Contact() {
                   <label className="text-sm font-medium text-gray-900">Email</label>
                   <input
                     type="email"
+                    name="email"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
                     placeholder="jean@exemple.fr"
-                    value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
                   />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-900">Téléphone</label>
                   <input
                     type="tel"
+                    name="phone"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
                     placeholder="06 XX XX XX XX"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
                 </div>
 
@@ -146,19 +114,17 @@ export default function Contact() {
                   <label className="text-sm font-medium text-gray-900">Entreprise</label>
                   <input
                     type="text"
+                    name="company"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
                     placeholder="Nom de votre entreprise"
-                    value={formData.company}
-                    onChange={(e) => setFormData({...formData, company: e.target.value})}
                   />
                 </div>
 
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium text-gray-900">Service souhaité</label>
                   <select
+                    name="service"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
-                    value={formData.service}
-                    onChange={(e) => setFormData({...formData, service: e.target.value})}
                   >
                     <option value="bureaux">Nettoyage de Bureaux</option>
                     <option value="vitrerie">Vitrerie</option>
@@ -170,23 +136,29 @@ export default function Contact() {
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium text-gray-900">Message</label>
                   <textarea
+                    name="message"
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-salem-700 focus:ring-2 focus:ring-blue-100 outline-none transition-all resize-none"
                     placeholder="Décrivez vos besoins..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
                   ></textarea>
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
               </div>
 
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="mt-6 w-full bg-gradient-to-r from-salem-700 to-salem-400 text-white py-4 px-6 rounded-xl 
-                  font-medium hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 flex items-center justify-center gap-2"
+                  font-medium hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
               >
-                Envoyer le message
+                {state.submitting ? "Envoi en cours..." : "Envoyer le message"}
                 <Send className="w-4 h-4" />
               </button>
+              {state.succeeded && (
+                <p className="mt-4 text-green-600 text-center">
+                  Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+                </p>
+              )}
             </form>
           </div>
         </div>

@@ -106,7 +106,7 @@ export default function ClientTypes() {
                 <div className="font-bold text-4xl mb-2">24/7</div>
                 <div className="text-blue-100 font-medium">Service Flexible</div>
               </div>
-              <div className="text-center">
+              <div className="hidden text-center">
                 <div className="font-bold text-4xl mb-2">-20%</div>
                 <div className="text-blue-100 font-medium">Sur le 1er Mois</div>
               </div>

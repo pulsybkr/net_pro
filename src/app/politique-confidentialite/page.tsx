@@ -86,8 +86,8 @@ export default function PolitiqueConfidentialitePage() {
                 Pour toute question concernant cette politique de confidentialité, 
                 vous pouvez nous contacter :<br /><br />
                 Éclat d’Nord<br />
-                Téléphone : 03 20 XX XX XX<br />
-                Email : contact@pronet-lille.fr
+                Téléphone : 06 29 27 15 31<br />
+                Email : eclatdnord@gmail.com
               </p>
             </section>
           </div>

@@ -6,7 +6,7 @@ export default function ServicesPage() {
     {
       title: "Nettoyage de Bureaux",
       description: "Un environnement de travail propre et sain pour une productivité optimale",
-      image: "/images/services/bureaux.jpg",
+      image: "/2__.jpg",
       features: [
         "Dépoussiérage complet du mobilier",
         "Nettoyage et désinfection des surfaces",
@@ -20,7 +20,7 @@ export default function ServicesPage() {
     {
       title: "Vitrerie Professionnelle",
       description: "Des vitres impeccables pour une image professionnelle parfaite",
-      image: "/images/services/vitrerie.jpg",
+      image: "/1__.jpg",
       features: [
         "Nettoyage des vitres intérieures/extérieures",
         "Entretien des châssis et encadrements",
@@ -32,16 +32,16 @@ export default function ServicesPage() {
       included: true
     },
     {
-      title: "Sanitaires & Vestiaires",
-      description: "Une hygiène irréprochable pour vos espaces sanitaires",
-      image: "/images/services/sanitaires.jpg",
+      title: "Particulier",
+      description: "Un nettoyage professionnel pour votre maison",
+      image: "/3__.jpg",
       features: [
-        "Désinfection complète",
-        "Détartrage des robinetteries",
-        "Nettoyage des miroirs et faïences",
-        "Approvisionnement en consommables",
-        "Traitement anti-bactérien",
-        "Contrôle quotidien"
+        "Nettoyage complet de la maison",
+        "Entretien des pièces principales",
+        "Nettoyage des salles de bain",
+        "Entretien des sols et surfaces",
+        "Dépoussiérage complet",
+        "Nettoyage de la cuisine"
       ],
       included: true
     }
