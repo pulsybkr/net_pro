@@ -1,5 +1,5 @@
 import { Check, Sparkles, ArrowRight } from "lucide-react";
-
+import Link from "next/link";
 export default function Services() {
   const services = [
     {
@@ -120,10 +120,10 @@ export default function Services() {
                 Nous adaptons nos prestations à vos besoins spécifiques. Fréquence, horaires, matériel... 
                 Tout est personnalisable pour répondre au mieux à vos attentes.
               </p>
-              <button className="bg-gradient-to-r from-salem-700 to-salem-400 text-white px-6 py-3 rounded-xl font-medium 
+              <Link href="/devis" className="bg-gradient-to-r from-salem-700 to-salem-400 text-white px-6 py-3 rounded-xl font-medium 
                 hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 hover:scale-105">
                 Demander un devis gratuit
-              </button>
+              </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[

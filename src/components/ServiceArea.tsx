@@ -1,4 +1,4 @@
-import { MapPin, Building2, Clock, CheckCircle } from "lucide-react";
+import { MapPin, Building2, Clock, CheckCircle, Link } from "lucide-react";
 
 export default function ServiceArea() {
   const areas = [
@@ -101,9 +101,9 @@ export default function ServiceArea() {
               <p className="mb-4 text-blue-50">
                 Contactez-nous pour vérifier si nous intervenons dans votre secteur
               </p>
-              <button className="bg-white text-salem-700 px-6 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+              <Link href="/#contact" className="bg-white text-salem-700 px-6 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors">
                 Nous Contacter
-              </button>
+              </Link>
             </div>
           </div>
         </div>

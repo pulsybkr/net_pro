@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Shield, Clock, Award, Brush, Users, Sparkles } from "lucide-react";
 
 export default function WhyUs() {
@@ -82,9 +83,9 @@ export default function WhyUs() {
               <p className="text-gray-600 mb-6">
                 Nous nous adaptons à vos besoins spécifiques et vous accompagnons dans la durée pour garantir votre satisfaction.
               </p>
-              <button className="bg-salem-700 text-white px-6 py-3 rounded-xl font-medium hover:bg-salem-800 transition-colors">
+              <Link href="/#contact" className="bg-salem-700 text-white px-6 py-3 rounded-xl font-medium hover:bg-salem-800 transition-colors">
                 Contactez-nous
-              </button>
+              </Link>
             </div>
             <div className="hidden grid grid-cols-2 gap-4">
               {[

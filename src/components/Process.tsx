@@ -1,4 +1,4 @@
-import { CalendarCheck, ClipboardList, Clock, CheckCircle } from "lucide-react";
+import { CalendarCheck, ClipboardList, Clock, CheckCircle, Link } from "lucide-react";
 
 export default function Process() {
   const steps = [
@@ -90,9 +90,9 @@ export default function Process() {
           <p className="mb-8 text-blue-50 max-w-2xl mx-auto">
             Obtenez un devis personnalisé en quelques minutes et découvrez comment nous pouvons vous aider à maintenir vos locaux impeccables.
           </p>
-          <button className="bg-white text-salem-700 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+          <Link href="/devis" className="bg-white text-salem-700 px-8 py-4 rounded-xl font-medium hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
             Demander un Devis Gratuit
-          </button>
+          </Link>
         </div>
       </div>
     </section>
