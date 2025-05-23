@@ -76,7 +76,7 @@ export default function WhyUs() {
         </div>
 
         {/* Section bonus */}
-        <div className="mt-16 bg-blue-50 rounded-2xl p-8 md:p-12">
+        <div className="hidden mt-16 bg-blue-50 rounded-2xl p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">Une équipe à votre écoute</h3>

@@ -85,7 +85,7 @@ export default function Process() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 text-center bg-gradient-to-r from-salem-700 to-salem-400 rounded-2xl p-12 text-white">
+        <div className="hidden mt-16 text-center bg-gradient-to-r from-salem-700 to-salem-400 rounded-2xl p-12 text-white">
           <h3 className="text-2xl font-bold mb-4">Prêt à commencer ?</h3>
           <p className="mb-8 text-blue-50 max-w-2xl mx-auto">
             Obtenez un devis personnalisé en quelques minutes et découvrez comment nous pouvons vous aider à maintenir vos locaux impeccables.

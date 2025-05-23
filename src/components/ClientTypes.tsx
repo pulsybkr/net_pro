@@ -94,7 +94,7 @@ export default function ClientTypes() {
         </div>
 
         {/* Section Statistiques avec design amélioré */}
-        <div className="mt-20 bg-gradient-to-r from-salem-700 to-salem-400 rounded-3xl p-12 text-white relative overflow-hidden">
+        <div className="hidden mt-20 bg-gradient-to-r from-salem-700 to-salem-400 rounded-3xl p-12 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10" />
           <div className="relative z-10">
             <div className="grid md:grid-cols-3 gap-12">
@@ -115,7 +115,7 @@ export default function ClientTypes() {
         </div>
 
         {/* CTA amélioré */}
-        <div className="mt-16 text-center">
+        <div className="hidden mt-16 text-center">
           <p className="text-gray-600 mb-8 text-lg">
             Vous ne trouvez pas votre secteur d'activité ? <br />
             Nous développons des solutions sur mesure pour chaque client.

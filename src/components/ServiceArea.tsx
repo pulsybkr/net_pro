@@ -96,7 +96,7 @@ export default function ServiceArea() {
             </div>
 
             {/* Call to Action */}
-            <div className="bg-gradient-to-r from-salem-700 to-salem-400 rounded-2xl p-8 text-white">
+            <div className="hidden bg-gradient-to-r from-salem-700 to-salem-400 rounded-2xl p-8 text-white">
               <h3 className="text-xl font-bold mb-2">Vous ne trouvez pas votre commune ?</h3>
               <p className="mb-4 text-blue-50">
                 Contactez-nous pour vérifier si nous intervenons dans votre secteur
